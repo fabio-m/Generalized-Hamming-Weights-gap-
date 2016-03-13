@@ -15,8 +15,8 @@ HammingWeight := function(C,n)
   return x;
 end;
 
-# Returns the Generalized Hamming Weight Distribution
-HammingWeightDistribution := function(C)
+# Returns the Generalized Hamming Weight Hierarchy
+HammingWeightHierarchy := function(C)
   local i, li;
   li := [];
   for i in [1..Dimension(C)] do
@@ -25,8 +25,8 @@ HammingWeightDistribution := function(C)
   return li;
 end;
 
-# Returns the perfect Hamming Weight Distrubution
-PerfectHammingWeightDistribution := function(C)
+# Returns the perfect Hamming Weight Hierarchy
+PerfectHammingWeightHierarchy := function(C)
   local i, li;
   li := [];
   for i in [1..Dimension(C)] do
